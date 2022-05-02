@@ -8,29 +8,29 @@ import org.openqa.selenium.*;
 
 
 public class GroupCreationTests {
-  private WebDriver wb;
+  private WebDriver wd;
   private JavascriptExecutor js;
 
   @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception {
     /* For Chrome
-    wb = new ChromeDriver(); */
-    wb = new FirefoxDriver();
-    wb.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    js = (JavascriptExecutor) wb;
+    wd = new ChromeDriver(); */
+    wd = new FirefoxDriver();
+    wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    js = (JavascriptExecutor) wd;
 
-    wb.get("http://localhost/addressbook/");
+    wd.get("http://localhost/addressbook/");
     login("admin", "secret");
   }
 
   private void login(String username, String password) {
-    wb.findElement(By.name("user")).click();
-    wb.findElement(By.name("user")).clear();
-    wb.findElement(By.name("user")).sendKeys(username);
-    wb.findElement(By.name("pass")).click();
-    wb.findElement(By.name("pass")).clear();
-    wb.findElement(By.name("pass")).sendKeys(password);
-    wb.findElement(By.xpath("//input[@value='Login']")).click();
+    wd.findElement(By.name("user")).click();
+    wd.findElement(By.name("user")).clear();
+    wd.findElement(By.name("user")).sendKeys(username);
+    wd.findElement(By.name("pass")).click();
+    wd.findElement(By.name("pass")).clear();
+    wd.findElement(By.name("pass")).sendKeys(password);
+    wd.findElement(By.xpath("//input[@value='Login']")).click();
   }
 
   @Test
@@ -44,45 +44,45 @@ public class GroupCreationTests {
   }
 
   private void logout() {
-    wb.findElement(By.linkText("Logout")).click();
+    wd.findElement(By.linkText("Logout")).click();
   }
 
   private void returnToGroupPage() {
-    wb.findElement(By.linkText("group page")).click();
+    wd.findElement(By.linkText("group page")).click();
   }
 
   private void submitGroupCreation() {
-    wb.findElement(By.name("submit")).click();
+    wd.findElement(By.name("submit")).click();
   }
 
   private void fillGroupForm(GroupData groupData) {
-    wb.findElement(By.name("group_name")).click();
-    wb.findElement(By.name("group_name")).clear();
-    wb.findElement(By.name("group_name")).sendKeys(groupData.getName());
-    wb.findElement(By.name("group_header")).click();
-    wb.findElement(By.name("group_header")).clear();
-    wb.findElement(By.name("group_header")).sendKeys(groupData.getHeader());
-    wb.findElement(By.name("group_footer")).click();
-    wb.findElement(By.name("group_footer")).clear();
-    wb.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
+    wd.findElement(By.name("group_name")).click();
+    wd.findElement(By.name("group_name")).clear();
+    wd.findElement(By.name("group_name")).sendKeys(groupData.getName());
+    wd.findElement(By.name("group_header")).click();
+    wd.findElement(By.name("group_header")).clear();
+    wd.findElement(By.name("group_header")).sendKeys(groupData.getHeader());
+    wd.findElement(By.name("group_footer")).click();
+    wd.findElement(By.name("group_footer")).clear();
+    wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
   }
 
   private void initGroupCreation() {
-    wb.findElement(By.name("new")).click();
+    wd.findElement(By.name("new")).click();
   }
 
   private void gotoGroupPage() {
-    wb.findElement(By.linkText("groups")).click();
+    wd.findElement(By.linkText("groups")).click();
   }
 
   @AfterMethod(alwaysRun = true)
   public void tearDown() throws Exception {
-    wb.quit();
+    wd.quit();
   }
 
   private boolean isElementPresent(By by) {
     try {
-      wb.findElement(by);
+      wd.findElement(by);
       return true;
     } catch (NoSuchElementException e) {
       return false;
@@ -91,7 +91,7 @@ public class GroupCreationTests {
 
   private boolean isAlertPresent() {
     try {
-      wb.switchTo().alert();
+      wd.switchTo().alert();
       return true;
     } catch (NoAlertPresentException e) {
       return false;
