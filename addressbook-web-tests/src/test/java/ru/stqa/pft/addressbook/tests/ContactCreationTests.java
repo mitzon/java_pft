@@ -9,18 +9,16 @@ public class ContactCreationTests extends BaseTest {
     @Test
     public void testContactCreation() throws Exception {
 
-        ContactData contactData = new ContactData(
-                "John",
-                "Doe",
-                "+79619854569",
-                "smth@yandex.ru",
-                "Matrosova street, 16/2",
-                "test1");
+//        ContactData contactData = new ContactData(
+//                "John",
+//                "Doe",
+//                "+79619854569",
+//                "smth@yandex.ru",
+//                "Matrosova street, 16/2",
+//                "test1");
 
         app.getContactHelper().gotoAddNew();
-        app.getContactHelper().fillContactForm(contactData, true);
-        app.getContactHelper().submitAddNewContact();
-        app.getNavigationHelper().returnToHomePage();
+        app.getContactHelper().createContact(ContactData.contactData);
         app.getSessionHelper().logout();
     }
 }

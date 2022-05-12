@@ -16,6 +16,11 @@ public class ContactModificationTests extends BaseTest {
                 "Lenina, 18/2",
                 null);
 
+        if (! app.getContactHelper().isThereAContact()) {
+            app.getContactHelper().createContact(ContactData.contactData);
+            app.getNavigationHelper().returnToHomePage();
+        }
+
         app.getContactHelper().editContact();
         app.getContactHelper().fillContactForm(newContactData, false);
         app.getContactHelper().submitModificationContact();

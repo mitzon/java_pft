@@ -40,4 +40,12 @@ public class ContactData {
     public String getGroup() {
         return group;
     }
+
+    public static ContactData contactData = new ContactData(
+            "John",
+            "Doe",
+            "+79619854569",
+            "smth@yandex.ru",
+            "Matrosova street, 16/2",
+            "test1");
 }
