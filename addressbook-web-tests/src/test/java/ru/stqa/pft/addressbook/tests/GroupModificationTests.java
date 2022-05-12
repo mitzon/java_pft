@@ -6,7 +6,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 public class GroupModificationTests extends BaseTest {
 
     @Test
-    public void testGroupModifictaion() {
+    public void testGroupModification() {
 
         app.getNavigationHelper().gotoGroupPage();
         app.getGroupHelper().selectGroup();
