@@ -6,17 +6,18 @@ import ru.stqa.pft.addressbook.model.ContactData;
 public class ContactModificationTests extends BaseTest {
 
     @Test
-    public void testContactModification() {
+    public void testContactModification() throws Exception {
 
         ContactData newContactData = new ContactData(
                 "Johnathan",
                 "Doe",
                 "79619854570",
                 "something2@yandex.ru",
-                "Lenina, 18/2");
+                "Lenina, 18/2",
+                null);
 
         app.getContactHelper().editContact();
-        app.getContactHelper().fillContactForm(newContactData);
+        app.getContactHelper().fillContactForm(newContactData, false);
         app.getContactHelper().submitModificationContact();
         app.getNavigationHelper().returnToHomePage();
 

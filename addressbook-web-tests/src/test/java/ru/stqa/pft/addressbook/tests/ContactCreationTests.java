@@ -14,10 +14,11 @@ public class ContactCreationTests extends BaseTest {
                 "Doe",
                 "+79619854569",
                 "smth@yandex.ru",
-                "Matrosova street, 16/2");
+                "Matrosova street, 16/2",
+                "test1");
 
         app.getContactHelper().gotoAddNew();
-        app.getContactHelper().fillContactForm(contactData);
+        app.getContactHelper().fillContactForm(contactData, true);
         app.getContactHelper().submitAddNewContact();
         app.getNavigationHelper().returnToHomePage();
         app.getSessionHelper().logout();
