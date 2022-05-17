@@ -24,7 +24,11 @@ public class ContactHelper extends HelperBase {
         type(By.name("address"), contactData.getAddress());
 
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            if (isElementPresent(By.xpath("//select[@name='new_group']/option[text()='" + contactData.getGroup()+ "']"))) {
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            } else {
+                System.out.println("Run testGroupCreation or create manually a group " + contactData.getGroup() + " to choose group for new contact!");
+            }
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
