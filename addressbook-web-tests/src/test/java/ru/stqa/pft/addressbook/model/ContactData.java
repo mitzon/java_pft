@@ -95,4 +95,13 @@ public class ContactData {
             "smth@yandex.ru",
             "Matrosova street, 16/2",
             "test1");
+
+    public static ContactData contactDataForCreationTest = new ContactData(
+            Integer.MAX_VALUE,
+            "John",
+            "Doe",
+            "+79619854569",
+            "smth@yandex.ru",
+            "Matrosova street, 16/2",
+            "test1");
 }
