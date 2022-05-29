@@ -11,8 +11,10 @@ public class ContactModificationTests extends BaseTest {
 
     @Test
     public void testContactModification() throws Exception {
+        int index = 0;
 
         ContactData newContactData = new ContactData(
+                index,
                 "Johnathan",
                 "Doe",
                 "79619854570",
@@ -27,7 +29,7 @@ public class ContactModificationTests extends BaseTest {
 
         List<ContactData> before = app.getContactHelper().getContactList();
 
-        app.getContactHelper().editContact(0);
+        app.getContactHelper().editContact(index);
         app.getContactHelper().fillContactForm(newContactData, false);
         app.getContactHelper().submitModificationContact();
         app.getNavigationHelper().returnToHomePage();

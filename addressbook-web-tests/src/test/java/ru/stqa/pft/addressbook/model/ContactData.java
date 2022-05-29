@@ -20,7 +20,7 @@ public class ContactData {
     }
 
     public ContactData(String firstName, String lastName, String phoneNumber, String email, String address, String group) {
-        this.id = Integer.MIN_VALUE;
+        this.id = Integer.MAX_VALUE;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -89,15 +89,6 @@ public class ContactData {
     }
 
     public static ContactData contactData = new ContactData(
-            "John",
-            "Doe",
-            "+79619854569",
-            "smth@yandex.ru",
-            "Matrosova street, 16/2",
-            "test1");
-
-    public static ContactData contactDataForCreationTest = new ContactData(
-            Integer.MAX_VALUE,
             "John",
             "Doe",
             "+79619854569",
