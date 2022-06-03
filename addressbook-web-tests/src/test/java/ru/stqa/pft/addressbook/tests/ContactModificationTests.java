@@ -13,14 +13,13 @@ public class ContactModificationTests extends BaseTest {
     public void testContactModification() throws Exception {
         int index = 0;
 
-        ContactData newContactData = new ContactData(
-                index,
-                "Johnathan",
-                "Doe",
-                "79619854570",
-                "something2@yandex.ru",
-                "Lenina, 18/2",
-                null);
+        ContactData newContactData = new ContactData()
+                .withId(index)
+                .withFirstName("Johnathan")
+                .withLastName("Doe")
+                .withPhoneNumber("79619854570")
+                .withEmail("something2@yandex.ru")
+                .withAddress("Lenina, 18/2");
 
         if (app.contact().list().size() == 0) {
             app.contact().create(ContactData.contactData);
