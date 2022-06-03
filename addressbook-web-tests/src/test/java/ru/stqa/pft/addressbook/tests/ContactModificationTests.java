@@ -22,19 +22,19 @@ public class ContactModificationTests extends BaseTest {
                 "Lenina, 18/2",
                 null);
 
-        if (! app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(ContactData.contactData);
-            app.getNavigationHelper().returnToHomePage();
+        if (app.contact().list().size() == 0) {
+            app.contact().create(ContactData.contactData);
+            app.goTo().returnToHomePage();
         }
 
-        List<ContactData> before = app.getContactHelper().getContactList();
+        List<ContactData> before = app.contact().list();
 
-        app.getContactHelper().editContact(index);
-        app.getContactHelper().fillContactForm(newContactData, false);
-        app.getContactHelper().submitModificationContact();
-        app.getNavigationHelper().returnToHomePage();
+        app.contact().editContact(index);
+        app.contact().fillContactForm(newContactData, false);
+        app.contact().submitModificationContact();
+        app.goTo().returnToHomePage();
 
-        List<ContactData> after = app.getContactHelper().getContactList();
+        List<ContactData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size());
 
         before.remove(0);

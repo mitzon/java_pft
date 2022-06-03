@@ -12,21 +12,21 @@ public class GroupModificationTests extends BaseTest {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        app.getNavigationHelper().gotoGroupPage();
+        app.goTo().groupPage();
 
-        if (! app.getGroupHelper().isThereAGroup()) {
-            app.getGroupHelper().createGroup(new GroupData("new_group", "new2", "new3"));
+        if (app.group().list().size() == 0) {
+            app.group().create(new GroupData("new_group", "new2", "new3"));
         }
     }
 
     @Test
     public void testGroupModification() {
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        List<GroupData> before = app.group().list();
         int index = 0;
-        GroupData group = new GroupData(before.get(index).getId(),"test1", "test2", "test3");
-        app.getGroupHelper().modifyGroup(index, group);
+        GroupData  group = new GroupData(before.get(index).getId(),"test1", "test2", "test3");
+        app.group().modify(index, group);
 
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        List<GroupData> after = app.group().list();
         Assert.assertEquals(after.size(), before.size());
 
         before.remove(index);
