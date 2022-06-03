@@ -7,8 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class ContactHelper extends HelperBase {
 
@@ -46,8 +48,12 @@ public class ContactHelper extends HelperBase {
         wd.findElements(By.name("selected[]")).get(index).click();
     }
 
-    public void editContact(int index) {
-        wd.findElements(By.xpath("//img[@title='Edit']")).get(index).click();
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[id='" + id + "']")).click();
+    }
+
+    public void editContactWithId(int id) {
+        wd.findElement(By.xpath("//a[@href='edit.php?id=" + id + "']")).click();
     }
 
     public void submitModificationContact() {
@@ -64,18 +70,19 @@ public class ContactHelper extends HelperBase {
         submitAddNewContact();
     }
 
-    public void delete(int index) {
-        selectContact(index);
+    public void delete(ContactData contact) {
+        selectContactById(contact.getId());
         deleteSelectedContacts();
         wd.switchTo().alert().accept();
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public List<ContactData> list() {
-        List<ContactData> contacts = new ArrayList<ContactData>();
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 
         for (WebElement element : elements) {
