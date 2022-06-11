@@ -6,11 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 public class ContactHelper extends HelperBase {
 
@@ -44,10 +42,6 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void selectContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
-    }
-
     public void selectContactById(int id) {
         wd.findElement(By.cssSelector("input[id='" + id + "']")).click();
     }
@@ -74,15 +68,15 @@ public class ContactHelper extends HelperBase {
         selectContactById(contact.getId());
         deleteSelectedContacts();
         wd.switchTo().alert().accept();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        click(By.linkText("home"));
     }
 
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public Set<ContactData> all() {
-        Set<ContactData> contacts = new HashSet<ContactData>();
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 
         for (WebElement element : elements) {
