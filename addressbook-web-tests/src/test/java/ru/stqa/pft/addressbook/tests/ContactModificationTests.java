@@ -28,9 +28,7 @@ public class ContactModificationTests extends BaseTest {
                 .withAddress("Lenina, 18/2");
 
 
-        app.contact().editContactWithId(contactForModification.getId());
-        app.contact().fillContactForm(newContactData, false);
-        app.contact().submitModificationContact();
+        app.contact().modify(newContactData);
         app.goTo().returnToHomePage();
 
         Contacts after = app.contact().all();
