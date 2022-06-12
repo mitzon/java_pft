@@ -23,7 +23,7 @@ public class ContactModificationTests extends BaseTest {
                 .withId(contactForModification.getId())
                 .withFirstName("Johnathan")
                 .withLastName("Doe")
-                .withPhoneNumber("79619854570")
+                .withHomePhone("79619854570")
                 .withEmail("something2@yandex.ru")
                 .withAddress("Lenina, 18/2");
 
