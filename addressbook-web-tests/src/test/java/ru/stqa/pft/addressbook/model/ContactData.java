@@ -8,12 +8,14 @@ public class ContactData {
     private String email2;
     private String email3;
     private String address;
+    private String address2;
     private String group;
     private String homePhone;
     private String mobilePhone;
     private String workPhone;
     private String allPhones;
     private String allEmails;
+    private String allAddresses;
 
     public String getAllPhones() {
         return allPhones;
@@ -55,6 +57,14 @@ public class ContactData {
         return address;
     }
 
+    public String getAddress2() {
+        return address2;
+    }
+
+    public String getAllAddresses() {
+        return allAddresses;
+    }
+
     public String getGroup() {
         return group;
     }
@@ -84,6 +94,16 @@ public class ContactData {
 
     public ContactData withAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public ContactData withAddress2(String address2) {
+        this.address2 = address2;
+        return this;
+    }
+
+    public ContactData withAllAddresses(String allAddresses) {
+        this.allAddresses = allAddresses;
         return this;
     }
 
@@ -170,5 +190,6 @@ public class ContactData {
             .withEmail2("abrakadabra!")
             .withEmail3("-+=01023")
             .withAddress("Matrosova street, 16/2")
+            .withAddress2("Gruzovaya street, 70")
             .withGroup("test1");
 }
