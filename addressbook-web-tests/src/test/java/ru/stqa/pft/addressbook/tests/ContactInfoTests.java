@@ -17,7 +17,7 @@ public class ContactInfoTests extends BaseTest {
     public void testContactInfo() {
         app.goTo().homePage();
 
-        if (app.contact().all().size() == 0) {
+        if (app.db().contacts().size() == 0) {
             app.contact().create(ContactData.contactData);
             app.goTo().returnToHomePage();
         }

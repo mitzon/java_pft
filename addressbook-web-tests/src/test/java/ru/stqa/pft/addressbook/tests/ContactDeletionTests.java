@@ -12,17 +12,17 @@ public class ContactDeletionTests extends BaseTest {
     @Test
     public void testContactDeletion() {
 
-        if (!app.contact().isThereAContact()) {
+        if (app.db().contacts().size() == 0) {
             app.contact().create(ContactData.contactData);
             app.goTo().returnToHomePage();
         }
 
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         ContactData contactForDeletion = before.iterator().next();
 
         app.contact().delete(contactForDeletion);
 
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after.size(), equalTo(before.size() - 1));
         assertThat(after, equalTo(
                 before.without(contactForDeletion)));

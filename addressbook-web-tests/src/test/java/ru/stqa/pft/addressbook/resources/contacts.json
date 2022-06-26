@@ -10,7 +10,8 @@
     "group": "test group 0",
     "homePhone": "+7525685280",
     "mobilePhone": "77-25-0",
-    "workPhone": "789 521 230"
+    "workPhone": "789 521 230",
+    "photo": "C:\\Users\\user\\IdeaProjects\\java_pft\\addressbook-web-tests\\src\\test\\java\\ru\\stqa\\pft\\addressbook\\resources\\photo.png"
   },
   {
     "firstName": "Firstname 1",
@@ -23,7 +24,8 @@
     "group": "test group 1",
     "homePhone": "+7525685281",
     "mobilePhone": "77-25-1",
-    "workPhone": "789 521 231"
+    "workPhone": "789 521 231",
+    "photo": "C:\\Users\\user\\IdeaProjects\\java_pft\\addressbook-web-tests\\src\\test\\java\\ru\\stqa\\pft\\addressbook\\resources\\photo.png"
   },
   {
     "firstName": "Firstname 2",
@@ -36,6 +38,7 @@
     "group": "test group 2",
     "homePhone": "+7525685282",
     "mobilePhone": "77-25-2",
-    "workPhone": "789 521 232"
+    "workPhone": "789 521 232",
+    "photo": "C:\\Users\\user\\IdeaProjects\\java_pft\\addressbook-web-tests\\src\\test\\java\\ru\\stqa\\pft\\addressbook\\resources\\photo.png"
   }
 ]

@@ -74,6 +74,7 @@ public class ContactData {
     @Transient
     private String allAddresses;
 
+    @Expose
     @Column(name = "photo")
     @Type(type = "text")
     private String photo;
@@ -249,6 +250,7 @@ public class ContactData {
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         return result;
     }
+
     private static File contactPhoto = new File("src/test/java/ru/stqa/pft/addressbook/resources/photo.png");
     public static ContactData contactData = new ContactData()
             .withFirstName("John")
