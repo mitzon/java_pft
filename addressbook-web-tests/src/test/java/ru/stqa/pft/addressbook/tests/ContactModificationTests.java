@@ -39,6 +39,6 @@ public class ContactModificationTests extends BaseTest {
         assertThat(after.size(), equalTo(before.size()));
         assertThat(after, equalTo(
                 before.without(contactForModification).withAdded(newContactData)));
-
+        verifyContactListInUi();
     }
 }

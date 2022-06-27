@@ -30,6 +30,6 @@ public class GroupDeletionTests extends BaseTest {
         Groups after = app.db().groups();
 
         assertThat(after, equalTo(before.without(groupForDeletion)));
-
+        verifyGroupListInUi();
     }
 }

@@ -80,6 +80,7 @@ public class GroupCreationTests extends BaseTest {
         Groups after = app.group().all();
 
         assertThat(after, equalTo(before));
+        verifyGroupListInUi();
     }
 
 }
