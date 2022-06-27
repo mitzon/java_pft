@@ -39,6 +39,7 @@ public class ChangeContactGroupTests extends BaseTest {
                     .getGroups()).iterator().next();
 
         app.contact().addToGroup(contactForModificationBefore, newGroup);
+        app.goTo().homePage();
 
         Contacts setOfContactsAfter = app.db().contacts();
         ContactData contactForModificationAfter = setOfContactsAfter.iterator().next();
@@ -63,6 +64,7 @@ public class ChangeContactGroupTests extends BaseTest {
         } else {
             newGroup = contactForModificationBefore.getGroups().iterator().next();
             app.contact().addToGroup(contactForModificationBefore, newGroup);
+            app.goTo().homePage();
         }
         app.contact().deleteFromGroup(contactForModificationBefore, newGroup);
 
