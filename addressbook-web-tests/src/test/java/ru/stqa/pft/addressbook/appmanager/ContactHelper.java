@@ -3,8 +3,6 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
@@ -12,7 +10,7 @@ import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper (WebDriver wd) {
+    public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -29,13 +27,6 @@ public class ContactHelper extends HelperBase {
 
         if (creation) {
             attach(By.name("photo"), contactData.getPhoto());
-            if (isElementPresent(By.xpath("//select[@name='new_group']/option[text()='" + contactData.getGroup()+ "']"))) {
-                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-            } else {
-                System.out.println("Run testGroupCreation or create manually a group " + contactData.getGroup() + " to choose group for new contact!");
-            }
-        } else {
-            Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
     }
 
@@ -113,7 +104,7 @@ public class ContactHelper extends HelperBase {
         return contactCache;
     }
 
-    public ContactData infoFromEditForm (ContactData contact) {
+    public ContactData infoFromEditForm(ContactData contact) {
         editContactWithId(contact.getId());
         String firstName = wd.findElement(By.name("firstname")).getAttribute("value");
         String lastName = wd.findElement(By.name("lastname")).getAttribute("value");

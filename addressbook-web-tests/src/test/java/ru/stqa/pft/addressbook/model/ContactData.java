@@ -5,6 +5,8 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "addressbook")
@@ -46,10 +48,6 @@ public class ContactData {
     private String address2;
 
     @Expose
-    @Transient
-    private String group;
-
-    @Expose
     @Column(name = "home")
     @Type(type = "text")
     private String homePhone;
@@ -78,6 +76,11 @@ public class ContactData {
     @Column(name = "photo")
     @Type(type = "text")
     private String photo;
+
+    @Expose
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     public File getPhoto() {
         return new File(photo);
@@ -131,16 +134,16 @@ public class ContactData {
         return allAddresses;
     }
 
-    public String getGroup() {
-        return group;
-    }
-
     public String getEmail2() {
         return email2;
     }
 
     public String getEmail3() {
         return email3;
+    }
+
+    public Groups getGroups() {
+        return new Groups(groups);
     }
 
     public ContactData withId(int id) {
@@ -170,11 +173,6 @@ public class ContactData {
 
     public ContactData withAllAddresses(String allAddresses) {
         this.allAddresses = allAddresses;
-        return this;
-    }
-
-    public ContactData withGroup(String group) {
-        this.group = group;
         return this;
     }
 
@@ -221,6 +219,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
+    }
+
 
     @Override
     public String toString() {
@@ -252,6 +255,7 @@ public class ContactData {
     }
 
     private static File contactPhoto = new File("src/test/java/ru/stqa/pft/addressbook/resources/photo.png");
+
     public static ContactData contactData = new ContactData()
             .withFirstName("John")
             .withLastName("Doe")
@@ -263,6 +267,5 @@ public class ContactData {
             .withEmail3("-+=01023")
             .withAddress("Matrosova street, 16/2")
             .withAddress2("Gruzovaya street, 70")
-            .withGroup("test1")
             .withPhoto(contactPhoto);
 }

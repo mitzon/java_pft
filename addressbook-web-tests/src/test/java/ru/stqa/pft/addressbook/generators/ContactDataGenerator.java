@@ -64,7 +64,6 @@ public class ContactDataGenerator {
                     .withEmail3(String.format("+3mvf23%s", i))
                     .withAddress(String.format("Matrosova %s", i))
                     .withAddress2(String.format("prospekt Gruzovoi %s", i))
-                    .withGroup(String.format("test group %s", i))
                     .withPhoto(new File("C:/Users/user/IdeaProjects/java_pft/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/resources/photo.png")));
         }
         return contacts;
