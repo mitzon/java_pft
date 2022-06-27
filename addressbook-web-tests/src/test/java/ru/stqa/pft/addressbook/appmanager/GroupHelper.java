@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager;
 
+import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -97,5 +98,10 @@ public class GroupHelper extends HelperBase {
             groupCache.add(group);
         }
         return new Groups(groupCache);
+    }
+
+    public String generateRandomGroupName(int length) {
+        String generatedString = RandomString.make(length);
+        return generatedString;
     }
 }
