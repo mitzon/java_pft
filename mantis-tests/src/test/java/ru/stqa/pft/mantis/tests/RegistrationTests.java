@@ -6,7 +6,7 @@ public class RegistrationTests extends BaseTest {
 
     @Test
     public void testRegistration() {
-        app.registration().start("", "@");
+        app.registration().start("user", "2@2");
 
     }
 }
