@@ -7,6 +7,7 @@ import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.model.MailMessage;
 
 import javax.mail.MessagingException;
+import javax.xml.rpc.ServiceException;
 import java.io.IOException;
 import java.util.List;
 
@@ -14,12 +15,13 @@ import static org.testng.Assert.assertTrue;
 
 public class RegistrationTests extends BaseTest {
 //    @BeforeMethod
-    public void startMailServer() {
-        app.mail().start();
-    }
+//    public void startMailServer() {
+//        app.mail().start();
+//    }
 
     @Test
-    public void testRegistration() throws IOException, MessagingException {
+    public void testRegistration() throws IOException, MessagingException, ServiceException {
+        skipIfNotFixed(0000002);
         long now = System.currentTimeMillis();
         String email = String.format("user%s@localhost", now);
         String user = String.format("user%s", now);
@@ -42,7 +44,7 @@ public class RegistrationTests extends BaseTest {
     }
 
 //    @AfterMethod(alwaysRun = true)
-    public void stopMailServer() {
-        app.mail().stop();
-    }
+//    public void stopMailServer() {
+//        app.mail().stop();
+//    }
 }

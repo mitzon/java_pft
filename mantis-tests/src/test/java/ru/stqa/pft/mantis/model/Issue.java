@@ -1,10 +1,13 @@
 package ru.stqa.pft.mantis.model;
 
+import ru.stqa.pft.mantis.appmanager.ResetPasswordHelper;
+
 public class Issue {
 
     private int id;
     private String summary;
     private String description;
+    private Resolution resolution;
     private Project project;
 
     public int getId() {
@@ -40,6 +43,15 @@ public class Issue {
 
     public Issue withProject(Project project) {
         this.project = project;
+        return this;
+    }
+
+    public Resolution getResolution() {
+        return resolution;
+    }
+
+    public Issue withResolution(Resolution resolution) {
+        this.resolution = resolution;
         return this;
     }
 }
