@@ -21,7 +21,7 @@ public class RegistrationTests extends BaseTest {
 
     @Test
     public void testRegistration() throws IOException, MessagingException, ServiceException {
-        skipIfNotFixed(0000002);
+        skipIfNotFixed(768);
         long now = System.currentTimeMillis();
         String email = String.format("user%s@localhost", now);
         String user = String.format("user%s", now);

@@ -1,7 +1,5 @@
 package ru.stqa.pft.mantis.model;
 
-import ru.stqa.pft.mantis.appmanager.ResetPasswordHelper;
-
 public class Issue {
 
     private int id;
