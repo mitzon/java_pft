@@ -1,14 +1,11 @@
 package ru.stqa.pft.sandbox;
 
-import jdk.jfr.Description;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class PointTests {
 
     @Test
-    @Description("Проверяем, что метод distanceToAnotherPoint отрабатывает корректно;" +
-            "так же проверяем, расстояние между точками рассчитывается всегда одинаковое.")
     public void distanceTest(){
         Point p1 = new Point("p1", 6, 9);
         Point p2 = new Point("p2", 2, 5);
