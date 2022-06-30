@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import jdk.jfr.Description;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 
@@ -13,7 +12,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class ContactInfoTests extends BaseTest {
 
     @Test
-    @Description("Проверяем телефоны, адреса и email контакта на главной странице приложения.")
     public void testContactInfo() {
         app.goTo().homePage();
 
