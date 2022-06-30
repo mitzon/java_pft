@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-30T14:50:35" hostname="ASUS-VIVOBOOKPR" time="0.937">
+  <properties/>
+  <testcase name="testGroupModification" classname="ru.stqa.pft.addressbook.tests.GroupModificationTests" time="0.937"/>
+  <system-out><![CDATA[17:50:35.084 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+17:50:35.084 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+17:50:35.085 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+17:50:35.086 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:35.087 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+17:50:35.087 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:35.087 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+17:50:35.087 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = HsGyE4c
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.087 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 0
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 0
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 0
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 1
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 1
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 1
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.088 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 0
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 0
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 0
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 1
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 1
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 1
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:35.089 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:35.089 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+17:50:35.089 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+17:50:35.089 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#119], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#119] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#124], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#124] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#125], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#125] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#126], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#126] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#127], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#127] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#128], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#128] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#129], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#129] (uninitialized)
+17:50:35.090 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+17:50:35.090 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 9 collections
+17:50:35.090 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 1, name=test name 1, header=test header 1, id=128, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=129, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=126, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 0, name=test name 0, header=test header 0, id=127, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 0, name=test name 0, header=test header 0, id=124, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 1, name=test name 1, header=test header 1, id=125, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=123, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=<uninitialized>}
+17:50:35.091 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=HsGyE4c, header=new2, id=119, contacts=<uninitialized>}
+17:50:35.092 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+17:50:35.092 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+17:50:35.092 [AsyncHttpClient-1-1] DEBUG o.a.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57100 : 1
+17:50:35.092 [AsyncHttpClient-1-1] DEBUG o.a.netty.channel.DefaultChannelPool - Entry count for : http://localhost:54832 : 1
+17:50:35.094 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.094 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.100 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.100 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.101 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.102 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.106 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.107 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.108 [Forwarding getElementText on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'GET' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/78a4486a-e20c-4563-b3ad-4128f8e3e626/text'
+17:50:35.108 [Forwarding getElementText on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for GET '/session/20e1da3cc20c301f2af667479c34ad67/element/78a4486a-e20c-4563-b3ad-4128f8e3e626/text'
+17:50:35.130 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/20e1da3cc20c301f2af667479c34ad67/element/78a4486a-e20c-4563-b3ad-4128f8e3e626/text HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 12
+
+17:50:35.130 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.132 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.132 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.137 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.138 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.139 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/8f7fb4b3-4806-4dfa-8061-039d05c67565/click'
+17:50:35.139 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/8f7fb4b3-4806-4dfa-8061-039d05c67565/click'
+17:50:35.265 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/8f7fb4b3-4806-4dfa-8061-039d05c67565/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.266 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.266 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.267 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.277 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.277 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.278 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/b5257797-ef7f-48d2-9688-cf2cb456cea1/click'
+17:50:35.278 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/b5257797-ef7f-48d2-9688-cf2cb456cea1/click'
+17:50:35.311 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/b5257797-ef7f-48d2-9688-cf2cb456cea1/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.311 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.312 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.312 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.321 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.321 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.322 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/2bccd5cf-ba57-448f-8ec9-be5c54aaf023/click'
+17:50:35.322 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/2bccd5cf-ba57-448f-8ec9-be5c54aaf023/click'
+17:50:35.468 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/2bccd5cf-ba57-448f-8ec9-be5c54aaf023/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.468 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.470 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.470 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.477 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 64
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.477 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.479 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/78bc0a30-ae49-47a8-9bf1-541d970c22b4/click'
+17:50:35.479 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/78bc0a30-ae49-47a8-9bf1-541d970c22b4/click'
+17:50:35.516 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/78bc0a30-ae49-47a8-9bf1-541d970c22b4/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.516 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.517 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.517 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.523 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 64
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.523 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.528 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.528 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.536 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 17
+
+17:50:35.536 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.537 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.537 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.545 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 66
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.545 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.546 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/b4416957-43ff-4c47-9d35-1f3b28fd42ab/click'
+17:50:35.546 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/b4416957-43ff-4c47-9d35-1f3b28fd42ab/click'
+17:50:35.571 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/b4416957-43ff-4c47-9d35-1f3b28fd42ab/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.571 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.572 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.572 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.578 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 66
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.578 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.581 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.581 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.589 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 17
+
+17:50:35.589 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.591 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.591 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.598 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 66
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.598 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.599 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/d58c4a2e-f6d1-49aa-aac1-7f7fd21f58fc/click'
+17:50:35.599 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/d58c4a2e-f6d1-49aa-aac1-7f7fd21f58fc/click'
+17:50:35.625 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/d58c4a2e-f6d1-49aa-aac1-7f7fd21f58fc/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.625 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.626 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.626 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.633 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 66
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.633 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.637 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.638 [Forwarding getElementAttribute on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/execute/sync'
+17:50:35.647 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 17
+
+17:50:35.647 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.648 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.648 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.656 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.656 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.658 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/8c6bdf70-da63-4d57-b136-ef4d7bfc6f97/click'
+17:50:35.658 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/8c6bdf70-da63-4d57-b136-ef4d7bfc6f97/click'
+17:50:35.832 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/8c6bdf70-da63-4d57-b136-ef4d7bfc6f97/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:35.833 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.833 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.833 [Forwarding findElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element'
+17:50:35.841 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+17:50:35.841 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:35.843 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/element/ee6d742e-76bc-4b11-8d3c-2498062835b7/click'
+17:50:35.843 [Forwarding clickElement on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/element/ee6d742e-76bc-4b11-8d3c-2498062835b7/click'
+17:50:36.001 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/element/ee6d742e-76bc-4b11-8d3c-2498062835b7/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:50:36.001 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:36.002 [Forwarding findElements on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]' for 'POST' to 'http://localhost:57100/session/20e1da3cc20c301f2af667479c34ad67/elements'
+17:50:36.002 [Forwarding findElements on session 20e1da3cc20c301f2af667479c34ad67 to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100] for POST '/session/20e1da3cc20c301f2af667479c34ad67/elements'
+17:50:36.010 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/20e1da3cc20c301f2af667479c34ad67/elements HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 64
+Content-Type: application/json; charset=utf-8
+host: localhost:57100
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 722
+
+17:50:36.010 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:57100 for channel [id: 0xbcc140e1, L:/127.0.0.1:54831 - R:localhost/127.0.0.1:57100]
+17:50:36.011 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+17:50:36.011 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+17:50:36.011 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+17:50:36.012 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+17:50:36.012 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+17:50:36.013 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+17:50:36.016 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = HsGyE4c
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#119]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 0
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 0
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 0
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#124]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 1
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 1
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 1
+17:50:36.017 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#125]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#126]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 0
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 0
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 0
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#127]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 1
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 1
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 1
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#128]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+17:50:36.018 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#129]
+17:50:36.019 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+17:50:36.019 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+17:50:36.019 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#119], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#119] (uninitialized)
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#124], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#124] (uninitialized)
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#125], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#125] (uninitialized)
+17:50:36.019 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#126], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#126] (uninitialized)
+17:50:36.020 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#127], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#127] (uninitialized)
+17:50:36.020 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#128], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#128] (uninitialized)
+17:50:36.020 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#129], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#129] (uninitialized)
+17:50:36.020 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+17:50:36.020 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 9 collections
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 1, name=test name 1, header=test header 1, id=128, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=129, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=126, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 0, name=test name 0, header=test header 0, id=127, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 0, name=test name 0, header=test header 0, id=124, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 1, name=test name 1, header=test header 1, id=125, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=123, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=HsGyE4c, header=new2, id=119, contacts=<uninitialized>}
+17:50:36.020 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+17:50:36.021 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
