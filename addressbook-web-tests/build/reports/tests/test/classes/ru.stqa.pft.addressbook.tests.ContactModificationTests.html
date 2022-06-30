@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ru.stqa.pft.addressbook.tests.ContactModificationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ru.stqa.pft.addressbook.tests.ContactModificationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.stqa.pft.addressbook.tests.html">ru.stqa.pft.addressbook.tests</a> &gt; ContactModificationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.983s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testContactModification</td>
+<td class="success">1.983s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:08:00.445 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:08:00.445 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:08:00.446 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:08:00.448 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:08:00.449 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Matrosova 0
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = 0@ya.ru
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Firstname 0
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = +7525685280
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Lastname 0
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:08:00.449 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:08:00.450 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:00.450 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:00.450 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:08:00.451 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:00.451 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:00.451 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:00.451 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:00.451 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:08:00.451 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:08:00.451 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:08:00.451 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:08:00.451 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#55], was: [ru.stqa.pft.addressbook.model.ContactData.groups#55] (initialized)
+20:08:00.451 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:08:00.451 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:08:00.451 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:08:00.451 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Lastname 0, address=Matrosova 0, address2=, homePhone=+7525685280, groups=[], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG:/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gNzUK/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAlgCWAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A9/ooooAKKKKACiiigAoopGZUUszBVUZJJwAKAForD1DxfoGnMY5tZ01ZgQGie8jVlyM8gnPp+dcVqPxms7M4g0+C6+UH5L4dc9OFNRKpGO7LUJPZHqNFeSWnxxhuJgkuixwqWA3NfDAB7/cFdxo/jbQtWtkf+1dOinIJaD7YjMoBxzyD6du9EakZbMJU5R3R0VFFFWQFFFFABRRRQAUUUUALRRRQAUUUUAFFFZHiHxHpnhewjvdVuRbwPKIlcxs+WIJAwoJ6KaTdtWNK+iNevJPiX8Rp9NZdO0qW4t5mM8ErNDGyswwo654yTXFal8XvEeonD2WmBCoBKxyDoc93rh5p/tN9c3T4Es8jSOF6BiSTj25rlqV01aJ006FneQ68uLjU7l7rUJBNcSY3uAFzgYHAAHQCoxGo6Clorkep0iFFPUU+2lnsJmns3EUrLtLEZyPTnPoKbRQtAPefhp8R5deK6Zq0lxcajNO/lSiKNEVBGGwduOeG7dxXqFfHdnfS6VqEWo26o00IIVZASpyCOcY9fWvqfwhqsWq+GNMlV1M32KBplVSArFBkDPvn1ruoVOZWZx1qfK7o3aKKK6DAKKKKACiiigAooooAKKKKAErwT4z6ncT6ncaYzy/Z4biJ1BkJXPldl6D7xr3yvBvjRZiK9mvMDMlzEucnP+q/+tWNe/JobUPjPNtPsJdV1GLT7cP5kuceWhY8AnoOvSvXNQ+HVrfeF7AQ+TaXlvZfvSloPMmk2L1wQd2QeuTk1h/CfSLe52608YNxb3EkavuIIBjHbp/Ea9bClmJHrXnnelofN2p+H9V0i6eGWwvWhUgLcNbsquSM4HGPXv2rNDqejD86+mdQ0uz1OERX8PnRhgwAYrzgjPBHYmuM1H4W6NN/yC7KKA7RjzLiU8557ntQDieNZHrRketelS/B7VWbMM+nKuTgGWTp2/hqE/B7WwcG503/AL+yf/EUE3POXAZCK92+Ct9JdWOowuzlYI7ZVBfIAw44HbpXj3ibQ7jwzqMdjdPE8kkIlBhJIwSR3A5+U17F8FbI2tjqMp24njtmGCfRzz+dbYe/OjKv8B6pRRRXoHCFFFFABRRRQAUUUUAFFFFABXBfEXwvb+KbBLN3n3JcJKREyqeEYdWBH8Vd7XPakWGoS9ccfyFYYiTjDQ6MNFSnqct4U8KWnhSxe1tZLh0aYykzMrHJUL2A44rA8baV4q1C4t30fTIbmKN5C7NKi4Uldp5cehrvs1neIIbu40G/jsrieG4NrKIzDnduKnGMEHOelcCet2eg1pocN4S0bxjZ6tLPqOkwQ2zQFVdZUOW3LxgOfQ16NdiQ2riBQ8nGAe/Ncj4Dsda0+0jfWNQ1C4JidSl5vGG35B+YnnH6Guwt5hKN4AwDjrmh2uKN7HkWpeHvHj6reyQ6JbtFNO5hYzx/MpY4P+s44IrvPBlnrVhpUEOs2cdtMqPuVHDYJckdGPbmsDXdJ8SSeLdMntdV1YWYvi8kcXmeWI/MU4OGxtxn2xXoMYZYgruZGHVj1NN2sKKdzivFfw7sfEt8l9JJeCaOFYlWKRFUgMT3U8/Me9eieFdNt9K0W1s4HkYw28UTByCRtXHYCqOcd61dFz+/znHy4z+NbYeb57GWJgnC5rUUUV3nnBRSUtABRSUUALRRRQAUUUUAFVLuxjuPm2jeSMkk1boqZRUlZlRk4u6Oeu7M23Py9M8E+tVgcYNbmqR7rKRxnIA/mKwh0rz60FCdkelQm5wuyO6JaMZ9ao2VysS+UQeSTwPar0s6QjLtjnHSoftkA53/AKGsWbFtXJQEHgikJxSI6yKGU5BGaGyeBTA0YNNMqFjt646mtW3t47dMIuCQN3JOcU+NBGuBnrnmn16VOlGGvU8qpVlPS+gUUUVqZBRRRQAUUUUAFFFFABRRRQAUUUUARzRiaJoz0PqM1zk8bQ3EispA3kKSMZ57V09UNStomtnmZcmJGbqfTP8ASuevT51dbo6MPV5JWezMCSJZRhgDznkZqP7JH/dX/vmnxTrKAVB/GpSMV556Q1VCKAAAAKuadbGedtynZtyGK5B5FUklja6hhZSfMcJ+uK6e3t0t4giLjHuT3rooU+eV+iOfEVeSNluyakpaK9A80KKKKAEpaKKAEopaKAEooooAWiiigAoprukUbSSMqIoLMzHAAHUk1zmt+NtI0m3Vor2xupt4VoVu0DKCCcnqfT86qMJSdooic4wV5Ox0tc7qHivRUuG0tr3F3M7W6x+U/L524zjHU9eleUa78RtU8RSBbGO80vKBP3F2xwQSc8Beo4qtonnSeINKkup5LiVrqIl5SS27eMnJ7k16VHLHOLlUdlZ/kzyq+bxhOMKau21+aPTZ9NCuSd+7uMiofsB7hsfUV0c4gCAzyRxDP3nwMn05rJt73S5Z1RdWs2J7CZTnj6187LCVL+4ro+njjKdvfaT9RkFvFYKb6VmWG3AmlY87VXknA5PAPStrSPEuk642zT7vzn2lyPLdeAcZ+YDuao62sf8AwjWo7NrIbOX5l6MNhrxLzdQtkD6dqF1aMeP9HdkOO4+UjjODXs5flqqUZNP3k/0PCzPNfY14KS91r9T6Sorxvw78Vp7TFnfWMk292f7RPeH5Rt6cqe49e9enab4k0nU4IGh1KyM0ioTClyjMrMPu4BznPFZ1cPUpvVG1HFUqq91mtRRRWB0BRRRQAUUUUAJRRVHVdUt9JsJrm4kCBInkGVJHyjJ6U0m3ZCbSV2X653xH4y07wwSL2G6k/diT9yqngtt7sO4ryvxR8SL7WJWtLaKzewR1kilEbq7Hbg5y3qT27Vwqxhema9Kjl7etT7jysRmaj7tP7zt9e+JesajJNHpl7LDZymRTHLBFkxt0GcHtnvXGTO9zO00zbpW+83TPbtSVa05wlyxY4Gz+or06VGEbRirHjV8RUmnKTuX7W0W3XLAb85BBPStPSW265pz/AN25jP8A48KqVZ0z/kMWP/Xwn/oQrvmkqckuz/Jnm0pOVaLfdfmjt/GWoahHp8csU4WJp1CrtGR8re1cBFJJbyiWFtsi9D1rvfF0/wBn0SB+ObgDkf7LV5bYX0iXsbMqADPY+hryssrRjh2mu/zPazehKWKTUu3yPXReXZ8HTfaZQ4l087doHH7s9ePcV5qnC8V6PO2/weH/AL1gT/5DrzhelXlLvGo/73+Znnas6S/u/wCRn31mu0yxgBVABBJznNV7DULzSZxPYTeTKGVw20N8ynIPINbBYINx6CsKY7riU9i5/nXXXhH7zgw1WW3Y9F8PfFmezI/4SCW6uxsI/cQRD5t3B/h7ZFeq6PrFvrdo9zbJKiK5jIkAByAD2J9a+YqdbStaXSXMQBdM4DdOQR/WvLrYGE9Y6M9qhmVSGk9UfVdFeS+D/ibNLLb6bqotIEDQwW5jikLOPunJyRn7vp1r1aGaO4iWWJtyN0OMV5VWjOk7SPao14Vo3gSUUUVkbCV498WdbmmnsbS2meJEaeKZY5jiQZQYYD8eD6mvYa8E8ZWF3feILvEse1LqbaG4wC/sPau3AxTqXfQ4MxlJUrR6nEzyfZ4gwXPOMDinxv5ik4xzirt7oF60CgSwfe9T7+1Pg0C8EZ/ewdfU/wCFev7Rc1rng+ylyXsUaAxQ5GfwrS/sG8/56w/mf8KQ6Def89YfzP8AhVc8e5Ps5di+GDcjGParWmf8hix/6+E/9CFR2Ok3bQNukiJ3ep9vatHTtJuU1eyYvFgToeCf7w9q7J1YSpt36P8AJnDTozjWirdV+aNn4iy+X4YtsHn7WvQ/7L15cGKfMOCPSvT/AB/ZXF1pkcCOgC3Ct83+43t71wL6DebT+9h/M/4V4+BajRSfdnu5knLEXXZHqasH8CW5zk/2YM/9+hXna9K9BsbWdvB5hZ0JSwCD0/1ePSuNXR7kj/WRfmf8K3yqUYxqJvr/AJnPnUZTdJpfZ/yMm9k2Wjj+LjHPPWsfOST61v6jo940oRZYQCo6k+v0ql/YN5/z1h/M/wCFdVarFy3OKhRnGG25m1DPP5P8OeM9a2P7BvP+esP5n/Cqt54fvW6SwdPU+v0rCU0lozohSk5WaKyOyrHOhKSLh1ZTgqeoIPrXu/wz1h77wxZWs8jS3CJI7SPLuY/vTjOeehFeMpoF55CDzYfujufT6V6R8K7e4tdQeGWRGRbV8BfUyKfSuXGcs6V+x2YByhWt0Z6rRRRXin0IlFFFAC0UUUAFFFFABSUUUALRRRQAlLRRQAUUUUAFFFFABRRRQAUUUUAf/9k=, email3=, email2=, firstName=Firstname 0, mobilePhone=, workPhone=, id=55, email=0@ya.ru}
+20:08:00.451 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:08:00.452 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:08:00.452 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:00.452 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:00.461 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 74
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:00.462 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:00.463 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/fd375381-19a1-46b6-9bd4-014324f40a06/click'
+20:08:00.463 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/fd375381-19a1-46b6-9bd4-014324f40a06/click'
+20:08:00.588 [AsyncHttpClient-1-1] DEBUG o.a.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53690 : 1
+20:08:01.145 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/fd375381-19a1-46b6-9bd4-014324f40a06/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.145 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.147 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.147 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.158 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 63
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.158 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.162 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/click'
+20:08:01.162 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/click'
+20:08:01.219 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.219 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.220 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.220 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.227 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 63
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.227 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.233 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.233 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.242 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 23
+
+20:08:01.242 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.243 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.243 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.249 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 63
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.249 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.250 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/clear'
+20:08:01.250 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/clear'
+20:08:01.276 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.276 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.277 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.277 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.284 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 63
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.284 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.285 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/value'
+20:08:01.285 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/value'
+20:08:01.407 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5da01409-116e-47df-81d5-26bb8ce33d26/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 171
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.407 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.410 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.410 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.419 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.419 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.421 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/click'
+20:08:01.421 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/click'
+20:08:01.460 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.460 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.461 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.461 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.466 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.466 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.469 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.469 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.476 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 22
+
+20:08:01.476 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.477 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.477 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.482 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.482 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.483 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/clear'
+20:08:01.483 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/clear'
+20:08:01.506 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.506 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.507 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.507 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.512 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.513 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.514 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/value'
+20:08:01.514 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/value'
+20:08:01.552 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/736bb86c-3c5b-4adc-b21e-306fd16ad38e/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 111
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.552 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.553 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.553 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.559 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.559 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.560 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/click'
+20:08:01.561 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/click'
+20:08:01.591 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.591 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.591 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.592 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.598 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.598 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.602 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.602 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.609 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 23
+
+20:08:01.609 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.610 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.610 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.616 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.616 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.618 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/clear'
+20:08:01.618 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/clear'
+20:08:01.640 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.640 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.641 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.641 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.648 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.649 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.650 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/value'
+20:08:01.650 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/value'
+20:08:01.686 [AsyncHttpClient-1-1] DEBUG o.a.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53690 : 1
+20:08:01.703 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/59b248b4-3b0f-44f9-b041-acfcc8e5a3f4/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 191
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.703 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.705 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.705 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.711 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.711 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.712 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/click'
+20:08:01.713 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/click'
+20:08:01.744 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.745 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.747 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.747 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.753 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.754 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.757 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.757 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.768 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 19
+
+20:08:01.768 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.769 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.769 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.774 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.774 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.776 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/clear'
+20:08:01.776 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/clear'
+20:08:01.794 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.794 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.795 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.795 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.802 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.803 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.804 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/value'
+20:08:01.804 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/value'
+20:08:01.850 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/702edcae-08c9-4dd6-a153-03b062a09069/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 281
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.851 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.852 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.852 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.858 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 61
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.858 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.860 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/click'
+20:08:01.860 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/click'
+20:08:01.893 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.893 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.894 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.895 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.903 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 61
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.903 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.906 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.906 [Forwarding getElementAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync'
+20:08:01.918 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 23
+
+20:08:01.918 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.919 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.919 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.925 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 61
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.925 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.926 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/clear'
+20:08:01.926 [Forwarding clearElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/clear'
+20:08:01.947 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:01.947 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.949 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.949 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:01.954 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 61
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:01.955 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:01.956 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/value'
+20:08:01.956 [Forwarding sendKeysToElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/value'
+20:08:02.004 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/691847e2-d30e-484a-a9af-850040bef6be/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 211
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:02.004 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.006 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.006 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.019 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:02.019 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.020 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/c635dc4b-9b2c-45af-9566-6b7f6681cc2f/click'
+20:08:02.020 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/c635dc4b-9b2c-45af-9566-6b7f6681cc2f/click'
+20:08:02.178 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/c635dc4b-9b2c-45af-9566-6b7f6681cc2f/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:02.178 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.183 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.183 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.192 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 1024
+
+20:08:02.192 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.195 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.195 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:08:02.205 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:08:02.205 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.206 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/c3209467-eada-4f9f-91b4-0f0bbd3f5a9b/click'
+20:08:02.206 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/c3209467-eada-4f9f-91b4-0f0bbd3f5a9b/click'
+20:08:02.414 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/c3209467-eada-4f9f-91b4-0f0bbd3f5a9b/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:08:02.414 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:08:02.415 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:08:02.415 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:08:02.421 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:08:02.424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:08:02.424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Lenina, 18/2
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = something2@yandex.ru
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:08:02.424 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Johnathan
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = 79619854570
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Doe
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:08:02.425 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:02.425 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:02.425 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:08:02.426 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:02.426 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:02.426 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:02.426 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:02.426 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:08:02.426 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:08:02.426 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:08:02.426 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:08:02.427 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#55], was: [ru.stqa.pft.addressbook.model.ContactData.groups#55] (initialized)
+20:08:02.427 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:08:02.427 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:08:02.427 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:08:02.427 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Doe, address=Lenina, 18/2, address2=, homePhone=79619854570, groups=[], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG:/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gNzUK/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAlgCWAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A9/ooooAKKKKACiiigAoopGZUUszBVUZJJwAKAForD1DxfoGnMY5tZ01ZgQGie8jVlyM8gnPp+dcVqPxms7M4g0+C6+UH5L4dc9OFNRKpGO7LUJPZHqNFeSWnxxhuJgkuixwqWA3NfDAB7/cFdxo/jbQtWtkf+1dOinIJaD7YjMoBxzyD6du9EakZbMJU5R3R0VFFFWQFFFFABRRRQAUUUUALRRRQAUUUUAFFFZHiHxHpnhewjvdVuRbwPKIlcxs+WIJAwoJ6KaTdtWNK+iNevJPiX8Rp9NZdO0qW4t5mM8ErNDGyswwo654yTXFal8XvEeonD2WmBCoBKxyDoc93rh5p/tN9c3T4Es8jSOF6BiSTj25rlqV01aJ006FneQ68uLjU7l7rUJBNcSY3uAFzgYHAAHQCoxGo6Clorkep0iFFPUU+2lnsJmns3EUrLtLEZyPTnPoKbRQtAPefhp8R5deK6Zq0lxcajNO/lSiKNEVBGGwduOeG7dxXqFfHdnfS6VqEWo26o00IIVZASpyCOcY9fWvqfwhqsWq+GNMlV1M32KBplVSArFBkDPvn1ruoVOZWZx1qfK7o3aKKK6DAKKKKACiiigAooooAKKKKAErwT4z6ncT6ncaYzy/Z4biJ1BkJXPldl6D7xr3yvBvjRZiK9mvMDMlzEucnP+q/+tWNe/JobUPjPNtPsJdV1GLT7cP5kuceWhY8AnoOvSvXNQ+HVrfeF7AQ+TaXlvZfvSloPMmk2L1wQd2QeuTk1h/CfSLe52608YNxb3EkavuIIBjHbp/Ea9bClmJHrXnnelofN2p+H9V0i6eGWwvWhUgLcNbsquSM4HGPXv2rNDqejD86+mdQ0uz1OERX8PnRhgwAYrzgjPBHYmuM1H4W6NN/yC7KKA7RjzLiU8557ntQDieNZHrRketelS/B7VWbMM+nKuTgGWTp2/hqE/B7WwcG503/AL+yf/EUE3POXAZCK92+Ct9JdWOowuzlYI7ZVBfIAw44HbpXj3ibQ7jwzqMdjdPE8kkIlBhJIwSR3A5+U17F8FbI2tjqMp24njtmGCfRzz+dbYe/OjKv8B6pRRRXoHCFFFFABRRRQAUUUUAFFFFABXBfEXwvb+KbBLN3n3JcJKREyqeEYdWBH8Vd7XPakWGoS9ccfyFYYiTjDQ6MNFSnqct4U8KWnhSxe1tZLh0aYykzMrHJUL2A44rA8baV4q1C4t30fTIbmKN5C7NKi4Uldp5cehrvs1neIIbu40G/jsrieG4NrKIzDnduKnGMEHOelcCet2eg1pocN4S0bxjZ6tLPqOkwQ2zQFVdZUOW3LxgOfQ16NdiQ2riBQ8nGAe/Ncj4Dsda0+0jfWNQ1C4JidSl5vGG35B+YnnH6Guwt5hKN4AwDjrmh2uKN7HkWpeHvHj6reyQ6JbtFNO5hYzx/MpY4P+s44IrvPBlnrVhpUEOs2cdtMqPuVHDYJckdGPbmsDXdJ8SSeLdMntdV1YWYvi8kcXmeWI/MU4OGxtxn2xXoMYZYgruZGHVj1NN2sKKdzivFfw7sfEt8l9JJeCaOFYlWKRFUgMT3U8/Me9eieFdNt9K0W1s4HkYw28UTByCRtXHYCqOcd61dFz+/znHy4z+NbYeb57GWJgnC5rUUUV3nnBRSUtABRSUUALRRRQAUUUUAFVLuxjuPm2jeSMkk1boqZRUlZlRk4u6Oeu7M23Py9M8E+tVgcYNbmqR7rKRxnIA/mKwh0rz60FCdkelQm5wuyO6JaMZ9ao2VysS+UQeSTwPar0s6QjLtjnHSoftkA53/AKGsWbFtXJQEHgikJxSI6yKGU5BGaGyeBTA0YNNMqFjt646mtW3t47dMIuCQN3JOcU+NBGuBnrnmn16VOlGGvU8qpVlPS+gUUUVqZBRRRQAUUUUAFFFFABRRRQAUUUUARzRiaJoz0PqM1zk8bQ3EispA3kKSMZ57V09UNStomtnmZcmJGbqfTP8ASuevT51dbo6MPV5JWezMCSJZRhgDznkZqP7JH/dX/vmnxTrKAVB/GpSMV556Q1VCKAAAAKuadbGedtynZtyGK5B5FUklja6hhZSfMcJ+uK6e3t0t4giLjHuT3rooU+eV+iOfEVeSNluyakpaK9A80KKKKAEpaKKAEopaKAEooooAWiiigAoprukUbSSMqIoLMzHAAHUk1zmt+NtI0m3Vor2xupt4VoVu0DKCCcnqfT86qMJSdooic4wV5Ox0tc7qHivRUuG0tr3F3M7W6x+U/L524zjHU9eleUa78RtU8RSBbGO80vKBP3F2xwQSc8Beo4qtonnSeINKkup5LiVrqIl5SS27eMnJ7k16VHLHOLlUdlZ/kzyq+bxhOMKau21+aPTZ9NCuSd+7uMiofsB7hsfUV0c4gCAzyRxDP3nwMn05rJt73S5Z1RdWs2J7CZTnj6187LCVL+4ro+njjKdvfaT9RkFvFYKb6VmWG3AmlY87VXknA5PAPStrSPEuk642zT7vzn2lyPLdeAcZ+YDuao62sf8AwjWo7NrIbOX5l6MNhrxLzdQtkD6dqF1aMeP9HdkOO4+UjjODXs5flqqUZNP3k/0PCzPNfY14KS91r9T6Sorxvw78Vp7TFnfWMk292f7RPeH5Rt6cqe49e9enab4k0nU4IGh1KyM0ioTClyjMrMPu4BznPFZ1cPUpvVG1HFUqq91mtRRRWB0BRRRQAUUUUAJRRVHVdUt9JsJrm4kCBInkGVJHyjJ6U0m3ZCbSV2X653xH4y07wwSL2G6k/diT9yqngtt7sO4ryvxR8SL7WJWtLaKzewR1kilEbq7Hbg5y3qT27Vwqxhema9Kjl7etT7jysRmaj7tP7zt9e+JesajJNHpl7LDZymRTHLBFkxt0GcHtnvXGTO9zO00zbpW+83TPbtSVa05wlyxY4Gz+or06VGEbRirHjV8RUmnKTuX7W0W3XLAb85BBPStPSW265pz/AN25jP8A48KqVZ0z/kMWP/Xwn/oQrvmkqckuz/Jnm0pOVaLfdfmjt/GWoahHp8csU4WJp1CrtGR8re1cBFJJbyiWFtsi9D1rvfF0/wBn0SB+ObgDkf7LV5bYX0iXsbMqADPY+hryssrRjh2mu/zPazehKWKTUu3yPXReXZ8HTfaZQ4l087doHH7s9ePcV5qnC8V6PO2/weH/AL1gT/5DrzhelXlLvGo/73+Znnas6S/u/wCRn31mu0yxgBVABBJznNV7DULzSZxPYTeTKGVw20N8ynIPINbBYINx6CsKY7riU9i5/nXXXhH7zgw1WW3Y9F8PfFmezI/4SCW6uxsI/cQRD5t3B/h7ZFeq6PrFvrdo9zbJKiK5jIkAByAD2J9a+YqdbStaXSXMQBdM4DdOQR/WvLrYGE9Y6M9qhmVSGk9UfVdFeS+D/ibNLLb6bqotIEDQwW5jikLOPunJyRn7vp1r1aGaO4iWWJtyN0OMV5VWjOk7SPao14Vo3gSUUUVkbCV498WdbmmnsbS2meJEaeKZY5jiQZQYYD8eD6mvYa8E8ZWF3feILvEse1LqbaG4wC/sPau3AxTqXfQ4MxlJUrR6nEzyfZ4gwXPOMDinxv5ik4xzirt7oF60CgSwfe9T7+1Pg0C8EZ/ewdfU/wCFev7Rc1rng+ylyXsUaAxQ5GfwrS/sG8/56w/mf8KQ6Def89YfzP8AhVc8e5Ps5di+GDcjGParWmf8hix/6+E/9CFR2Ok3bQNukiJ3ep9vatHTtJuU1eyYvFgToeCf7w9q7J1YSpt36P8AJnDTozjWirdV+aNn4iy+X4YtsHn7WvQ/7L15cGKfMOCPSvT/AB/ZXF1pkcCOgC3Ct83+43t71wL6DebT+9h/M/4V4+BajRSfdnu5knLEXXZHqasH8CW5zk/2YM/9+hXna9K9BsbWdvB5hZ0JSwCD0/1ePSuNXR7kj/WRfmf8K3yqUYxqJvr/AJnPnUZTdJpfZ/yMm9k2Wjj+LjHPPWsfOST61v6jo940oRZYQCo6k+v0ql/YN5/z1h/M/wCFdVarFy3OKhRnGG25m1DPP5P8OeM9a2P7BvP+esP5n/Cqt54fvW6SwdPU+v0rCU0lozohSk5WaKyOyrHOhKSLh1ZTgqeoIPrXu/wz1h77wxZWs8jS3CJI7SPLuY/vTjOeehFeMpoF55CDzYfujufT6V6R8K7e4tdQeGWRGRbV8BfUyKfSuXGcs6V+x2YByhWt0Z6rRRRXin0IlFFFAC0UUUAFFFFABSUUUALRRRQAlLRRQAUUUUAFFFFABRRRQAUUUUAf/9k=, email3=, email2=, firstName=Johnathan, mobilePhone=, workPhone=, id=55, email=something2@yandex.ru}
+20:08:02.427 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:08:02.427 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6</a> at 27 июн. 2022 г., 20:08:09</p>
+</div>
+</div>
+</body>
+</html>

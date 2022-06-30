@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.HbConnectionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-27T17:08:08" hostname="ASUS-VIVOBOOKPR" time="0.017">
+  <properties/>
+  <testcase name="testHbConnectionContacts" classname="ru.stqa.pft.addressbook.tests.HbConnectionTest" time="0.01"/>
+  <testcase name="testHbConnectionGroups" classname="ru.stqa.pft.addressbook.tests.HbConnectionTest" time="0.007"/>
+  <system-out><![CDATA[20:08:08.384 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+20:08:08.384 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:08:08.384 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:08:08.385 [Test worker] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7668ec30
+20:08:08.385 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.pft.addressbook.model.ContactData where deprecated = '0000-00-00'
+20:08:08.386 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.386 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[DOT] Node: '.'
+    |           |  |  |  +-[DOT] Node: '.'
+    |           |  |  |  |  +-[IDENT] Node: 'ru'
+    |           |  |  |  |  \-[IDENT] Node: 'stqa'
+    |           |  |  |  \-[IDENT] Node: 'pft'
+    |           |  |  \-[IDENT] Node: 'addressbook'
+    |           |  \-[IDENT] Node: 'model'
+    |           \-[IDENT] Node: 'ContactData'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'deprecated'
+          \-[QUOTED_STRING] Node: ''0000-00-00''
+
+20:08:08.386 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+20:08:08.386 [Test worker] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.pft.addressbook.model.ContactData (<no alias>) -> contactdat0_
+20:08:08.387 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+20:08:08.387 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} addressbook contactdat0_ ) ( where ( = deprecated '0000-00-00' ) ) )
+20:08:08.387 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+20:08:08.388 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity ContactData): [addressbook]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(ru.stqa.pft.addressbook.model.ContactData)
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-IdentNode
+          | persister: null
+          | originalText: deprecated
+          \-LiteralNode
+
+20:08:08.388 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [addressbook contactdat0_]
+20:08:08.388 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+20:08:08.388 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (addressbook)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'contactdat0_.id as id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=ru.stqa.pft.addressbook.model.ContactData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[contactdat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'addressbook contactdat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=ru.stqa.pft.addressbook.model.ContactData}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[IDENT] IdentNode: 'deprecated' {originalText=deprecated}
+          \-[QUOTED_STRING] LiteralNode: ''0000-00-00''
+
+20:08:08.388 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.388 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from ru.stqa.pft.addressbook.model.ContactData where deprecated = '0000-00-00'
+20:08:08.388 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:08:08.388 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.388 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:08:08.389 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:08:08.390 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Lenina, 18/2
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = something2@yandex.ru
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Johnathan
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = 79619854570
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Doe
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:08:08.390 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#55]
+20:08:08.390 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:08.391 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:08:08.391 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:08.391 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:08.392 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#55]
+20:08:08.392 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:08:08.392 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:08:08.392 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:08:08.392 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:08:08.392 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:08:08.392 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#55], was: [ru.stqa.pft.addressbook.model.ContactData.groups#55] (initialized)
+20:08:08.392 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:08:08.392 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:08:08.392 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:08:08.392 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Doe, address=Lenina, 18/2, address2=, homePhone=79619854570, groups=[], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, email3=, email2=, firstName=Johnathan, mobilePhone=, workPhone=, id=55, email=something2@yandex.ru}
+20:08:08.392 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:08:08.392 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+ContactData{id=55, firstName='Johnathan', lastName='Doe'}
+[]
+20:08:08.393 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:08:08.393 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:08:08.394 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.pft.addressbook.model.GroupData
+20:08:08.394 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.394 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[DOT] Node: '.'
+                |  |  |  |  +-[IDENT] Node: 'ru'
+                |  |  |  |  \-[IDENT] Node: 'stqa'
+                |  |  |  \-[IDENT] Node: 'pft'
+                |  |  \-[IDENT] Node: 'addressbook'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+20:08:08.394 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+20:08:08.395 [Test worker] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.pft.addressbook.model.GroupData (<no alias>) -> groupdata0_
+20:08:08.395 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+20:08:08.395 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+20:08:08.395 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+20:08:08.395 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity GroupData): [group_list]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(ru.stqa.pft.addressbook.model.GroupData)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+20:08:08.395 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+20:08:08.395 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+20:08:08.395 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.pft.addressbook.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.pft.addressbook.model.GroupData}}
+
+20:08:08.395 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.395 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from ru.stqa.pft.addressbook.model.GroupData
+20:08:08.396 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+20:08:08.396 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+20:08:08.396 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+20:08:08.396 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:08:08.396 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#119]
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#120]
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#123]
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#124]
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#125]
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+20:08:08.397 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#126]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#119]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = HsGyE4c
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#119]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.397 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#124]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 0
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 0
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 0
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#124]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#125]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 1
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 1
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 1
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#125]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#126]
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#126]
+GroupData{id='119', name='HsGyE4c'}
+GroupData{id='120', name='UyvfTeY'}
+GroupData{id='123', name='test1'}
+GroupData{id='124', name='test name 0'}
+GroupData{id='125', name='test name 1'}
+GroupData{id='126', name='test name 2'}
+20:08:08.398 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:08:08.398 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:08:08.398 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:08:08.398 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#119], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#119] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#124], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#124] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#125], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#125] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#126], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#126] (uninitialized)
+20:08:08.399 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 6 objects
+20:08:08.399 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 6 collections
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=126, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=HsGyE4c, header=new2, id=119, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 0, name=test name 0, header=test header 0, id=124, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 1, name=test name 1, header=test header 1, id=125, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=123, contacts=<uninitialized>}
+20:08:08.399 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:08:08.399 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

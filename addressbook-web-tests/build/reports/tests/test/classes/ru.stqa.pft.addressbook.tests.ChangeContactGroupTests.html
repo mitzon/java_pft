@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ru.stqa.pft.addressbook.tests.ChangeContactGroupTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ru.stqa.pft.addressbook.tests.ChangeContactGroupTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.stqa.pft.addressbook.tests.html">ru.stqa.pft.addressbook.tests</a> &gt; ChangeContactGroupTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.820s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testDeleteContactFromGroup"></a>
+<h3 class="failures">testDeleteContactFromGroup</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='group']&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'ASUS-VIVOBOOKPR', ip: '192.168.31.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [335235c0d12ef8d11a67a6a8efe4f74a, findElement {using=name, value=group}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53690/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 335235c0d12ef8d11a67a6a8efe4f74a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at ru.stqa.pft.addressbook.appmanager.ContactHelper.chooseGroupWithCurrentContact(ContactHelper.java:88)
+	at ru.stqa.pft.addressbook.appmanager.ContactHelper.deleteFromGroup(ContactHelper.java:100)
+	at ru.stqa.pft.addressbook.tests.ChangeContactGroupTests.testDeleteContactFromGroup(ChangeContactGroupTests.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddContactToGroup</td>
+<td class="success">0.570s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testDeleteContactFromGroup</td>
+<td class="failures">0.250s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:07:56.537 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:07:56.537 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:07:56.538 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:07:56.539 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:07:56.539 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Lenina, 18/2
+20:07:56.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:07:56.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = something2@yandex.ru
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Johnathan
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = 79619854570
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Doe
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:07:56.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.540 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.541 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:07:56.542 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.542 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.542 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.543 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:56.543 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.543 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:56.543 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:07:56.543 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:07:56.543 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:07:56.543 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#54], was: [ru.stqa.pft.addressbook.model.ContactData.groups#54] (initialized)
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#122], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#122] (uninitialized)
+20:07:56.543 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:07:56.544 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:07:56.544 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:07:56.544 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:07:56.544 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Doe, address=Lenina, 18/2, address2=, homePhone=79619854570, groups=[ru.stqa.pft.addressbook.model.GroupData#122, ru.stqa.pft.addressbook.model.GroupData#123], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, email3=, email2=, firstName=Johnathan, mobilePhone=, workPhone=, id=54, email=something2@yandex.ru}
+20:07:56.544 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=122, contacts=&lt;uninitialized&gt;}
+20:07:56.544 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=123, contacts=&lt;uninitialized&gt;}
+20:07:56.544 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.544 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.544 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:07:56.544 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:07:56.545 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+20:07:56.546 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:07:56.546 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:56.546 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+20:07:56.546 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:56.546 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+20:07:56.547 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.547 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+20:07:56.547 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = HsGyE4c
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:07:56.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.548 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:07:56.548 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:07:56.548 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#119], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#119] (uninitialized)
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+20:07:56.548 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#122], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#122] (uninitialized)
+20:07:56.549 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:07:56.549 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+20:07:56.549 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 4 collections
+20:07:56.549 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:07:56.549 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=&lt;uninitialized&gt;}
+20:07:56.549 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=HsGyE4c, header=new2, id=119, contacts=&lt;uninitialized&gt;}
+20:07:56.549 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=122, contacts=&lt;uninitialized&gt;}
+20:07:56.549 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=123, contacts=&lt;uninitialized&gt;}
+20:07:56.549 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.550 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.556 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.556 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.566 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:56.566 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.568 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/ac5e611f-da62-42ae-a3de-dbb0defe4b0e/click'
+20:07:56.568 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/ac5e611f-da62-42ae-a3de-dbb0defe4b0e/click'
+20:07:56.600 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/ac5e611f-da62-42ae-a3de-dbb0defe4b0e/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:56.600 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.605 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.605 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.613 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:56.614 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.615 [Forwarding getElementTagName on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/name'
+20:07:56.615 [Forwarding getElementTagName on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/name'
+20:07:56.620 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/name HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 18
+
+20:07:56.620 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.621 [Forwarding getElementDomAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/attribute/multiple'
+20:07:56.621 [Forwarding getElementDomAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/attribute/multiple'
+20:07:56.625 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/attribute/multiple HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:56.625 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.627 [Forwarding findChildElements on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/elements'
+20:07:56.627 [Forwarding findChildElements on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/elements'
+20:07:56.636 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/30b9dfed-d09c-486a-9a35-d3fedcf88339/elements HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 138
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 90
+
+20:07:56.637 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.642 [Forwarding isElementSelected on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/selected'
+20:07:56.642 [Forwarding isElementSelected on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/selected'
+20:07:56.648 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/selected HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 15
+
+20:07:56.649 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.650 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/click'
+20:07:56.651 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/click'
+20:07:56.671 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/53a6caa9-a4ca-4cf1-8ed8-f586dc06f1aa/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:56.672 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.674 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.674 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.681 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 57
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:56.681 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.683 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/82e96f1c-904a-4259-b7d2-1602d7cc2fd1/click'
+20:07:56.683 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/82e96f1c-904a-4259-b7d2-1602d7cc2fd1/click'
+20:07:56.834 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/82e96f1c-904a-4259-b7d2-1602d7cc2fd1/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:56.835 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.836 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:07:56.836 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:07:56.837 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:07:56.838 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:07:56.838 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Lenina, 18/2
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = something2@yandex.ru
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Johnathan
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = 79619854570
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Doe
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:07:56.839 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:56.840 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.840 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:07:56.841 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.841 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.841 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.841 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.841 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:56.841 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.841 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:56.842 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:56.842 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:56.842 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:56.842 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:56.843 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:07:56.843 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:07:56.843 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:07:56.843 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:07:56.843 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#54], was: [ru.stqa.pft.addressbook.model.ContactData.groups#54] (initialized)
+20:07:56.843 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+20:07:56.843 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#122], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#122] (uninitialized)
+20:07:56.843 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:07:56.843 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+20:07:56.843 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 4 collections
+20:07:56.843 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:07:56.843 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=&lt;uninitialized&gt;}
+20:07:56.843 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Doe, address=Lenina, 18/2, address2=, homePhone=79619854570, groups=[ru.stqa.pft.addressbook.model.GroupData#122, ru.stqa.pft.addressbook.model.GroupData#123, ru.stqa.pft.addressbook.model.GroupData#120], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, email3=, email2=, firstName=Johnathan, mobilePhone=, workPhone=, id=54, email=something2@yandex.ru}
+20:07:56.844 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=122, contacts=&lt;uninitialized&gt;}
+20:07:56.844 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=123, contacts=&lt;uninitialized&gt;}
+20:07:56.844 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.844 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:56.848 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.848 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.859 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 1024
+
+20:07:56.859 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.866 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.867 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:56.882 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 45
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:56.882 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:56.885 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/ef1b8608-0de2-4e2a-b72c-91166f49fec9/click'
+20:07:56.885 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/ef1b8608-0de2-4e2a-b72c-91166f49fec9/click'
+20:07:57.105 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/ef1b8608-0de2-4e2a-b72c-91166f49fec9/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:57.105 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.141 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:07:57.141 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:07:57.142 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.address2 as address3_1_, contactdat0_.email as email4_1_, contactdat0_.email2 as email5_1_, contactdat0_.email3 as email6_1_, contactdat0_.firstname as firstnam7_1_, contactdat0_.home as home8_1_, contactdat0_.lastname as lastname9_1_, contactdat0_.mobile as mobile10_1_, contactdat0_.photo as photo11_1_, contactdat0_.work as work12_1_ from addressbook contactdat0_ where deprecated='0000-00-00'
+20:07:57.145 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:07:57.145 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = Lenina, 18/2
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address2` : value = 
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address2`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = something2@yandex.ru
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email2` : value = 
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email2`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email3` : value = 
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email3`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `firstName` : value = Johnathan
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `groups` : value = NOT NULL COLLECTION
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`groups`)  - enhanced for lazy-loading? - false
+20:07:57.145 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `homePhone` : value = 79619854570
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`homePhone`)  - enhanced for lazy-loading? - false
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `lastName` : value = Doe
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `mobilePhone` : value = 
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`mobilePhone`)  - enhanced for lazy-loading? - false
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `photo` : value = PHOTO;ENCODING=BASE64;TYPE=JPEG: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
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`photo`)  - enhanced for lazy-loading? - false
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `workPhone` : value = 
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`workPhone`)  - enhanced for lazy-loading? - false
+20:07:57.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.ContactData#54]
+20:07:57.146 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.146 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+20:07:57.148 [Test worker] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl - Preparing collection initializer : [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.148 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.148 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.149 [Test worker] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl - Found row of collection: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:07:57.149 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.150 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:07:57.150 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.150 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:57.150 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:57.150 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [ru.stqa.pft.addressbook.model.ContactData.groups#54]
+20:07:57.150 [Test worker] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: ru.stqa.pft.addressbook.model.ContactData.groups
+20:07:57.150 [Test worker] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+20:07:57.150 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:07:57.150 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:07:57.151 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:07:57.151 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.ContactData.groups#54], was: [ru.stqa.pft.addressbook.model.ContactData.groups#54] (initialized)
+20:07:57.151 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+20:07:57.152 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#122], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#122] (uninitialized)
+20:07:57.152 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:07:57.152 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+20:07:57.152 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 4 collections
+20:07:57.152 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:07:57.152 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=&lt;uninitialized&gt;}
+20:07:57.152 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.ContactData{lastName=Doe, address=Lenina, 18/2, address2=, homePhone=79619854570, groups=[ru.stqa.pft.addressbook.model.GroupData#122, ru.stqa.pft.addressbook.model.GroupData#123, ru.stqa.pft.addressbook.model.GroupData#120], photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, email3=, email2=, firstName=Johnathan, mobilePhone=, workPhone=, id=54, email=something2@yandex.ru}
+20:07:57.152 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=122, contacts=&lt;uninitialized&gt;}
+20:07:57.152 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=123, contacts=&lt;uninitialized&gt;}
+20:07:57.153 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:57.153 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:57.153 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:07:57.153 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:07:57.154 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+20:07:57.154 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+20:07:57.155 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:57.155 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+20:07:57.155 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:57.155 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+20:07:57.155 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:57.156 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+20:07:57.156 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = HsGyE4c
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#119]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = new3
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = new2
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = UyvfTeY
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#120]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.156 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test3
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test2
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test1
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#122]
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `contacts` : value = NOT NULL COLLECTION
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`contacts`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `footer` : value = test footer 2
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`footer`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `header` : value = test header 2
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`header`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `name` : value = test name 2
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.addressbook.model.GroupData#123]
+20:07:57.157 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:07:57.157 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:07:57.157 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#119], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#119] (uninitialized)
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#120], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#120] (uninitialized)
+20:07:57.157 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#122], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#122] (uninitialized)
+20:07:57.158 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [ru.stqa.pft.addressbook.model.GroupData.contacts#123], was: [ru.stqa.pft.addressbook.model.GroupData.contacts#123] (uninitialized)
+20:07:57.158 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+20:07:57.158 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 4 collections
+20:07:57.158 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:07:57.158 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=UyvfTeY, header=new2, id=120, contacts=&lt;uninitialized&gt;}
+20:07:57.158 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=new3, name=HsGyE4c, header=new2, id=119, contacts=&lt;uninitialized&gt;}
+20:07:57.158 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=122, contacts=&lt;uninitialized&gt;}
+20:07:57.158 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test footer 2, name=test name 2, header=test header 2, id=123, contacts=&lt;uninitialized&gt;}
+20:07:57.158 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:57.158 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+20:07:57.160 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.160 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.166 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 58
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:57.166 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.168 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/7fbc614c-ed47-4aba-a5ed-6a20b4e93492/click'
+20:07:57.168 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/7fbc614c-ed47-4aba-a5ed-6a20b4e93492/click'
+20:07:57.203 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/7fbc614c-ed47-4aba-a5ed-6a20b4e93492/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:57.204 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.206 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.206 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.211 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:57.211 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.212 [Forwarding getElementTagName on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/name'
+20:07:57.212 [Forwarding getElementTagName on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/name'
+20:07:57.215 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/name HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 18
+
+20:07:57.215 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.217 [Forwarding getElementDomAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/attribute/multiple'
+20:07:57.217 [Forwarding getElementDomAttribute on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/attribute/multiple'
+20:07:57.221 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/attribute/multiple HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:57.221 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.222 [Forwarding findChildElements on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/elements'
+20:07:57.222 [Forwarding findChildElements on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/elements'
+20:07:57.229 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/5edb6a19-70e0-46fb-abaa-e12d9f564724/elements HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 136
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 90
+
+20:07:57.230 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.231 [Forwarding isElementSelected on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'GET' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/selected'
+20:07:57.231 [Forwarding isElementSelected on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for GET '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/selected'
+20:07:57.237 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/selected HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 15
+
+20:07:57.237 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.238 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/click'
+20:07:57.238 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/click'
+20:07:57.253 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/71a0e0f7-67e5-4ec5-975f-ce73de288aa6/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:57.253 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.255 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.255 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.259 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 57
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+20:07:57.259 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.261 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element/e12e0f5d-cfd5-4121-9973-a1378001828a/click'
+20:07:57.261 [Forwarding clickElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element/e12e0f5d-cfd5-4121-9973-a1378001828a/click'
+20:07:57.285 [AsyncHttpClient-1-1] DEBUG o.a.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53690 : 1
+20:07:57.377 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element/e12e0f5d-cfd5-4121-9973-a1378001828a/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+20:07:57.377 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+20:07:57.378 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]' for 'POST' to 'http://localhost:49214/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.378 [Forwarding findElement on session 335235c0d12ef8d11a67a6a8efe4f74a to remote] DEBUG o.a.netty.request.NettyRequestSender - Using open Channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214] for POST '/session/335235c0d12ef8d11a67a6a8efe4f74a/element'
+20:07:57.389 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/335235c0d12ef8d11a67a6a8efe4f74a/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:49214
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 1029
+
+20:07:57.389 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:49214 for channel [id: 0x4ab95111, L:/127.0.0.1:53689 - R:localhost/127.0.0.1:49214]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6</a> at 27 июн. 2022 г., 20:08:09</p>
+</div>
+</div>
+</body>
+</html>
