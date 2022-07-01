@@ -56,9 +56,9 @@ public class BaseTest {
 
 //    private boolean isIssueOpen(int issueId) throws IOException {
 //        BugifyIssue issue = app.rest().getIssueById(issueId);
-//        if (issue.getState_name().equals("Closed")) {
-//            return true;
+//        if (! issue.getState_name().equals("Closed")) {
+//            return false;
 //        }
-//        return false;
+//        return true;
 //    }
 }
