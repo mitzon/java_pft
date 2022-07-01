@@ -14,6 +14,10 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class BaseTest {
 
@@ -41,19 +45,20 @@ public class BaseTest {
         }
     }
 
-//    private boolean isIssueOpen(int issueId) throws RemoteException, ServiceException, MalformedURLException {
-//        Issue issue = app.soap().getIssue(BigInteger.valueOf(issueId));
-//        if (issue.getResolution().getName().equals("fixed")) {
-//            return false;
-//        }
-//        return true;
-//    }
-
-    private boolean isIssueOpen(int issueId) throws IOException {
-        BugifyIssue issue = app.rest().getIssueById(issueId);
-        if (issue.getState_name().equals("Closed")) {
-            return true;
+    private boolean isIssueOpen(int issueId) throws RemoteException, ServiceException, MalformedURLException {
+        Issue issue = app.soap().getIssue(BigInteger.valueOf(issueId));
+        Set<String> resolutionsForClosedIssue = new HashSet<String>(Arrays.asList("fixed", "no change required", "won't fix"));
+        if (resolutionsForClosedIssue.contains(issue.getResolution().getName())) {
+            return false;
         }
-        return false;
+        return true;
     }
+
+//    private boolean isIssueOpen(int issueId) throws IOException {
+//        BugifyIssue issue = app.rest().getIssueById(issueId);
+//        if (issue.getState_name().equals("Closed")) {
+//            return true;
+//        }
+//        return false;
+//    }
 }
