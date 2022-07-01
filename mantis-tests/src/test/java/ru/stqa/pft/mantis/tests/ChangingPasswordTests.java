@@ -23,7 +23,8 @@ public class ChangingPasswordTests extends BaseTest {
     public void testChangingPassword() throws MessagingException, IOException {
         String realName = "Real Name";
         String newPassword = "newpassword";
-        String userLogin = app.db().returnUserLogin();
+        String userLogin = app.db().returnUserLoginAndPassword().get(0);
+        String userEmail = app.db().returnUserLoginAndPassword().get(1);
 
         app.login().asUser(app.getProperty("web.adminLogin"), app.getProperty("web.adminPassword"));
         app.goTo().manageOverviewPage();
@@ -32,7 +33,7 @@ public class ChangingPasswordTests extends BaseTest {
         app.goTo().resetPassword();
 
         List<MailMessage> mailMessages = app.mail().waitForMail(1, 10000);
-        String resetPasswordLink = findResetPasswordLink(mailMessages, String.format("%s@localhost", userLogin));
+        String resetPasswordLink = findResetPasswordLink(mailMessages, userEmail);
 
         app.reset().finish(resetPasswordLink, realName, newPassword);
         assertTrue(app.newSession().login(userLogin, newPassword));
